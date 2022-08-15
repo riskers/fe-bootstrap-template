@@ -7,7 +7,6 @@
   "scripts": {
     "semantic-release": "semantic-release",
     "lint": "prettier --write './**/*.{ts,tsx,js,jsx}' && eslint . --ext .js,.jsx,.ts,.tsx --fix",
-    "pre-commit": "npm run lint",
     "prepare": "husky install",
     "predev": "rimraf ./dist",
     "dev": "rollup -cw",
