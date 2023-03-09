@@ -1,3 +1,10 @@
+# [1.1.0-alpha.1](https://github.com/riskers/fe-bootstrap-template/compare/v1.0.0...v1.1.0-alpha.1) (2023-03-09)
+
+
+### Features
+
+* Alpha Config ([bd4b436](https://github.com/riskers/fe-bootstrap-template/commit/bd4b436b1e38762fd2a9693a4c28086ecb4bdd2b))
+
 # 1.0.0 (2023-03-09)
 
 
