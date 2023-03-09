@@ -37,3 +37,11 @@ chmod ug+x .git/hooks/*
   ![](https://user-images.githubusercontent.com/106944652/184101863-aeac91d9-f0d4-4dc5-a4ca-969372263231.png)
 
 3. Auto publish package by [semantic-release](https://github.com/semantic-release/semantic-release) on [Github Action](./.github/workflows/release.yaml).
+
+## Support Alpha / Beta pre-release
+
+[There](https://www.npmjs.com/package/opensource-fe-template?activeTab=versions) are version history:
+![](https://i.imgur.com/mp37kEx.png)
+
+More details: https://github.com/semantic-release/semantic-release/blob/master/docs/recipes/release-workflow/pre-releases.md
+
