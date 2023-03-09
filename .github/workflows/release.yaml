@@ -4,8 +4,9 @@ on:
     types: [ semantic-release ]
   push:
     branches:
-      - master
-      - release
+      - main
+      - alpha
+      - beta
 
 jobs:
   release:
