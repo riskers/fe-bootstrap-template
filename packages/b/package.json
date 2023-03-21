@@ -1,6 +1,6 @@
 {
   "name": "@riskers12/b",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@riskers12/a": "workspace:*"
+    "@riskers12/a": "1.0.0-alpha.1"
   },
   "devDependencies": {
     "@babel/core": "^7.18.10",
