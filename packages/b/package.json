@@ -2,7 +2,7 @@
   "name": "@riskers12/b",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/esm/index.js",
   "scripts": {
     "predev": "rimraf ./dist",
     "dev": "rollup -cw",
