@@ -1,4 +1,8 @@
+const hooks = require('semantic-release-monorepo-hooks');
+const output = hooks();
+
 module.exports = {
+  extends: 'semantic-release-monorepo',
   branches: ['main', { name: 'beta', prerelease: true }, { name: 'alpha', prerelease: true }],
   plugins: [
     '@semantic-release/commit-analyzer',

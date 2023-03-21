@@ -1,91 +1,41 @@
 {
-  "name": "@riskers12/a",
-  "version": "1.1.0-alpha.2",
-  "description": "",
-  "main": "./dist/esm/index.js",
-  "types": "./dist/esm/index.d.ts",
+  "name": "fe-bootstrap-template",
+  "version": "1.0.0",
+  "private": true,
+  "description": "## PNPM workspace",
+  "repository": {
+    "type": "git",
+    "url": "git@github-riskers.com:riskers/fe-bootstrap-template.git"
+  },
   "scripts": {
-    "semantic-release": "semantic-release",
-    "lint": "prettier --write './src/*.{ts,tsx,js,jsx}' && eslint ./src/ --ext .js,.jsx,.ts,.tsx --fix",
-    "prepare": "husky install",
-    "predev": "rimraf ./dist",
-    "dev": "rollup -cw",
-    "prebuild": "rimraf ./dist",
-    "build": "rollup -c",
-    "test": "TS_NODE_PROJECT=./config/tsconfig-test.json node --es-module-specifier-resolution=node --loader ts-node/esm --nolazy node_modules/mocha/lib/cli/cli.js --timeout 9999999 --color 'test/*.test.ts'"
-  },
-  "engines": {
-    "yarn": "please use pnpm",
-    "npm": "please use pnpm"
-  },
-  "exports": {
-    ".": {
-      "import": {
-        "types": "./dist/esm/index.d.ts",
-        "default": "./dist/esm/index.js"
-      },
-      "require": {
-        "types": "./dist/cjs/index.d.ts",
-        "default": "./dist/cjs/index.js"
-      }
-    }
-  },
-  "files": [
-    "dist",
-    "types"
-  ],
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "tag": "latest",
-    "access": "public"
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "lint-staged": {
-    "**/*.{js,jsx,ts,tsx}": [
-      "prettier --write",
-      "eslint --ext .js,.ts --fix"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
+  "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.18.10",
+    "@changesets/cli": "^2.26.0",
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
-    "@rollup/plugin-babel": "^5.3.1",
-    "@rollup/plugin-commonjs": "^22.0.2",
-    "@rollup/plugin-json": "^4.1.0",
-    "@rollup/plugin-node-resolve": "^13.3.0",
-    "@rollup/plugin-typescript": "^8.3.4",
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/git": "^10.0.1",
-    "@types/chai": "^4.3.3",
-    "@types/mocha": "^9.1.1",
-    "@types/node": "^18.7.2",
-    "@typescript-eslint/eslint-plugin": "^5.32.0",
-    "@typescript-eslint/parser": "^5.32.0",
-    "chai": "^4.3.6",
-    "conventional-changelog-cmyr-config": "^2.0.4",
-    "eslint": "^8.21.0",
+    "eslint": "^8.36.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "husky": "^8.0.1",
+    "husky": "^8.0.3",
     "lint-staged": "^13.0.3",
-    "mocha": "^10.0.0",
-    "prettier": "^2.7.1",
-    "rimraf": "^3.0.2",
-    "rollup": "^2.77.3",
-    "rollup-plugin-auto-external": "^2.0.0",
-    "rollup-plugin-node-builtins": "^2.1.2",
-    "rollup-plugin-polyfill-node": "^0.10.2",
-    "rollup-plugin-terser": "^7.0.2",
+    "prettier": "^2.8.6",
     "semantic-release": "^19.0.3",
-    "ts-node": "^10.9.1",
-    "tslib": "^2.4.0",
-    "typescript": "^4.7.4"
+    "semantic-release-monorepo": "^7.0.5",
+    "semantic-release-monorepo-hooks": "^2.10.0"
+  },
+  "main": ".commitlintrc.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "eslint-scope": "^7.1.1",
+    "eslint-utils": "^3.0.0",
+    "eslint-visitor-keys": "^3.3.0",
+    "prettier-linter-helpers": "^1.0.0"
   }
 }
