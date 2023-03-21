@@ -10,7 +10,7 @@
   "scripts": {
     "prepare": "husky install",
     "build": "pnpm run -r build",
-    "release": "npm_config_yes=true npx zx-bulk-release"
+    "release": "npx multi-semantic-release"
   },
   "keywords": [],
   "author": "",
