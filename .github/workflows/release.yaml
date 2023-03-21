@@ -24,7 +24,7 @@ jobs:
           version: 7
       - run: pnpm install
       - run: pnpm run build
-      - run: pnpm run release
+      - run: npx multi-semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
