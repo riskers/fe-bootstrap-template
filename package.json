@@ -9,7 +9,7 @@
   },
   "scripts": {
     "prepare": "husky install",
-    "build": "pnpm run build -r --if-present",
+    "build": "pnpm run -r build",
     "release": "npm_config_yes=true npx zx-bulk-release"
   },
   "keywords": [],
