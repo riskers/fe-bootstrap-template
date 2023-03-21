@@ -8,7 +8,9 @@
     "url": "git@github-riskers.com:riskers/fe-bootstrap-template.git"
   },
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build": "pnpm workspaces foreach -tp run build",
+    "release": "npm_config_yes=true npx zx-bulk-release"
   },
   "keywords": [],
   "author": "",
@@ -23,10 +25,12 @@
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.3",
     "lint-staged": "^13.0.3",
+    "multi-semantic-release": "^3.0.2",
     "prettier": "^2.8.6",
     "semantic-release": "^19.0.3",
     "semantic-release-monorepo": "^7.0.5",
-    "semantic-release-monorepo-hooks": "^2.10.0"
+    "semantic-release-monorepo-hooks": "^2.10.0",
+    "zx-bulk-release": "^1.26.2"
   },
   "main": ".commitlintrc.js",
   "directories": {
