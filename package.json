@@ -9,8 +9,7 @@
   },
   "scripts": {
     "prepare": "husky install",
-    "build": "pnpm run -r build",
-    "release": "npx multi-semantic-release"
+    "build": "pnpm run -r build"
   },
   "keywords": [],
   "author": "",
