@@ -1,5 +1,5 @@
-const hooks = require('semantic-release-monorepo-hooks');
-const output = hooks();
+// const hooks = require('semantic-release-monorepo-hooks');
+// const output = hooks();
 
 module.exports = {
   branches: ['main', { name: 'beta', prerelease: true }, { name: 'alpha', prerelease: true }],
