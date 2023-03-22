@@ -1,3 +1,10 @@
+# [@riskers12/a-v1.0.0-alpha.7](https://github.com/riskers/fe-bootstrap-template/compare/@riskers12/a-v1.0.0-alpha.6...@riskers12/a-v1.0.0-alpha.7) (2023-03-22)
+
+
+### Features
+
+* Both a and b ([9f1c0c4](https://github.com/riskers/fe-bootstrap-template/commit/9f1c0c4fc1494eb5832ed4096a8a7bdb8a4f4f24))
+
 # [@riskers12/a-v1.0.0-alpha.6](https://github.com/riskers/fe-bootstrap-template/compare/@riskers12/a-v1.0.0-alpha.5...@riskers12/a-v1.0.0-alpha.6) (2023-03-22)
 
 
