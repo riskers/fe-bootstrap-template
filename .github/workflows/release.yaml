@@ -9,77 +9,42 @@ on:
       - beta
 
 jobs:
-
-  lint:
-    name: lint
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 7
-      - name: Install Deps
-        run: pnpm install
-      - name: Lint
-        run: pnpm run -r lint
-
-  build:
-    name: build
-    needs: lint
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 7
-      - name: Install Deps
-        run: pnpm install
-      - name: Build
-        run: pnpm run -r build
-
-      - name: Save target (artifact)
-        uses: actions/upload-artifact@v3
-        with:
-          name: target
-          retention-days: 1
-          path: |
-            !packages/*/node_modules
-            !packages/*/src
-            packages
-
   release:
-    name: Release
+    name: release
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
         with:
           persist-credentials: false
-          fetch-depth: 0
-
-      - name: Restore target
-        uses: actions/download-artifact@v3
-        with:
-          name: target
-
       - uses: actions/setup-node@v3
         with:
           node-version: 16
+          cache: 'pnpm'
       - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        id: pnpm-install
         with:
           version: 7
-      - name: Install Deps
-        run: pnpm install
+          run_install: false
 
-      - name: Release
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        shell: bash
         run: |
-          pnpm run -r build
-          pnpm -r --workspace-concurrency=1 exec -- "npx --no-install semantic-release -e semantic-release-monorepo" && node -e "require('semantic-release-monorepo-hooks').hookAfterAll()"
+          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install dependencies
+        run: pnpm install
+      - run: pnpm run build
+      - run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
