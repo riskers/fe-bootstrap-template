@@ -1,9 +1,10 @@
-# [1.1.0](https://github.com/riskers/fe-bootstrap-template/compare/v1.0.0...v1.1.0) (2023-03-09)
+# [1.1.0-alpha.2](https://github.com/riskers/fe-bootstrap-template/compare/v1.1.0-alpha.1...v1.1.0-alpha.2) (2023-03-21)
 
 
 ### Features
 
-* Alpha Config ([bd4b436](https://github.com/riskers/fe-bootstrap-template/commit/bd4b436b1e38762fd2a9693a4c28086ecb4bdd2b))
+* Update package.json ([11a5fbe](https://github.com/riskers/fe-bootstrap-template/commit/11a5fbe0ffdf139b50577584f75d884088a8a944))
+* Update package.json ([af83f54](https://github.com/riskers/fe-bootstrap-template/commit/af83f54f975906a54aa02681f7e51c4550bb0330))
 
 # [1.1.0-alpha.1](https://github.com/riskers/fe-bootstrap-template/compare/v1.0.0...v1.1.0-alpha.1) (2023-03-09)
 

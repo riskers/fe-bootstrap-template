@@ -1,5 +1,13 @@
 # opensource-fe-template
 
+## PNPM workspace
+
+use PNPM workspace monorepo
+
+## RELEASE
+
+use semantic-release
+
 ## Lint and Format
 
 * [ESLint](https://eslint.org/): [config](./.eslintrc.js)
