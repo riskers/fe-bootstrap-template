@@ -13,4 +13,4 @@ jobs:
         with:
           version: 7
       - run: pnpm install
-      - run: npm run lint
+      - run: pnpm run -r lint

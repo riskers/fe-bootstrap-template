@@ -15,4 +15,4 @@ jobs:
           version: 7
 
       - run: pnpm install
-      - run: npm run test
+      - run: pnpm run -r test
