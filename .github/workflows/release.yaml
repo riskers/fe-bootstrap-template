@@ -9,22 +9,77 @@ on:
       - beta
 
 jobs:
-  release:
-    name: release
+
+  lint:
+    name: lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          persist-credentials: false
       - uses: actions/setup-node@v3
         with:
           node-version: 16
       - uses: pnpm/action-setup@v2
         with:
           version: 7
-      - run: pnpm install
-      - run: pnpm run -r build
-      - run: pnpm -r --workspace-concurrency=1 exec -- "npx --no-install semantic-release -e semantic-release-monorepo" && node -e "require('semantic-release-monorepo-hooks').hookAfterAll()"
+      - name: Install Deps
+        run: pnpm install
+      - name: Lint
+        run: pnpm run -r lint
+
+  build:
+    name: build
+    needs: lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7
+      - name: Install Deps
+        run: pnpm install
+      - name: Build
+        run: pnpm run -r build
+
+      - name: Save target (artifact)
+        uses: actions/upload-artifact@v3
+        with:
+          name: target
+          retention-days: 1
+          path: |
+            !packages/*/node_modules
+            !packages/*/src
+            packages
+
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Restore target
+        uses: actions/download-artifact@v3
+        with:
+          name: target
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7
+      - name: Install Deps
+        run: pnpm install
+
+      - name: Release
+        run: |
+          pnpm run -r build
+          pnpm -r --workspace-concurrency=1 exec -- "npx --no-install semantic-release -e semantic-release-monorepo" && node -e "require('semantic-release-monorepo-hooks').hookAfterAll()"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
