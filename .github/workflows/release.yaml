@@ -47,7 +47,9 @@ jobs:
         run: pnpm run -r build
 
       - name: Release
-        run: pnpm -F "@riskers12/**" --workspace-concurrency=1 exec -- npx --no-install semantic-release -e semantic-release-monorepo
+        run: |
+          find . -type f -name package.json -exec sed -i 's/workspace://g' '{}' \;
+          pnpm -F "@riskers12/**" --workspace-concurrency=1 exec -- npx --no-install semantic-release -e semantic-release-monorepo
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
