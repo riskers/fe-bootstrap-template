@@ -1,5 +1,8 @@
 # opensource-fe-template
 
+* Monorepo: https://riskers.notion.site/pnpm-monorepo-publish-d2db019bb2ba438baa0c7e2f20711315
+* Not Monorepo: https://riskers.notion.site/77b61318069c4f01a593e23dde13bf61
+
 ## PNPM workspace
 
 use PNPM workspace monorepo
