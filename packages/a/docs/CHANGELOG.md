@@ -1,3 +1,10 @@
+# [@riskers12/a-v1.0.0-alpha.3](https://github.com/riskers/fe-bootstrap-template/compare/@riskers12/a-v1.0.0-alpha.2...@riskers12/a-v1.0.0-alpha.3) (2023-03-22)
+
+
+### Features
+
+* Mul method ([4e698b6](https://github.com/riskers/fe-bootstrap-template/commit/4e698b676da43b9eaf3e7f59e9065a732affeda1))
+
 # [@riskers12/a-v1.0.0-alpha.2](https://github.com/riskers/fe-bootstrap-template/compare/@riskers12/a-v1.0.0-alpha.1...@riskers12/a-v1.0.0-alpha.2) (2023-03-22)
 
 
