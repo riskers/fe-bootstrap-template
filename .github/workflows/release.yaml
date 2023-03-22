@@ -46,6 +46,7 @@ jobs:
       - name: Build
         run: pnpm run -r build
 
+      # https://github.com/pmowrer/semantic-release-monorepo/issues/130
       - name: Release
         run: |
           find . -type f -name package.json -exec sed -i 's/workspace://g' '{}' \;
