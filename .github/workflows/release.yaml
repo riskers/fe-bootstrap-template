@@ -44,7 +44,7 @@ jobs:
         run: pnpm install
 
       - name: Build
-        run: pnpm run build
+        run: pnpm run -r build
 
       - name: Release
         run: npx semantic-release
