@@ -17,7 +17,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@riskers12/a": "*",
+    "@riskers12/a": "workspace:*",
     "axios": "^1.3.4"
   },
   "devDependencies": {
