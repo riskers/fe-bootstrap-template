@@ -1,3 +1,13 @@
+# @riskers12/b [1.0.0-alpha.2](https://github.com/riskers/fe-bootstrap-template/compare/@riskers12/b@1.0.0-alpha.1...@riskers12/b@1.0.0-alpha.2) (2023-03-22)
+
+
+
+
+
+### Dependencies
+
+* **@riskers12/a:** upgraded to 1.0.0-alpha.1
+
 # @riskers12/b 1.0.0-alpha.1 (2023-03-21)
 
 
