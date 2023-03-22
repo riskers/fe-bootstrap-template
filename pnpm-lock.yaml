@@ -20,6 +20,7 @@ importers:
       prettier-linter-helpers: ^1.0.0
       semantic-release: ^19.0.3
       semantic-release-monorepo: ^7.0.5
+      semantic-release-monorepo-hooks: ^2.10.0
     dependencies:
       eslint-scope: 7.1.1
       eslint-utils: 3.0.0_eslint@8.36.0
@@ -38,6 +39,7 @@ importers:
       prettier: 2.8.6
       semantic-release: 19.0.5
       semantic-release-monorepo: 7.0.5_semantic-release@19.0.5
+      semantic-release-monorepo-hooks: 2.10.0
 
   packages/a:
     specifiers:
@@ -154,6 +156,13 @@ packages:
     dependencies:
       '@jridgewell/gen-mapping': 0.1.1
       '@jridgewell/trace-mapping': 0.3.15
+    dev: true
+
+  /@antongolub/git-root/1.5.10:
+    resolution: {integrity: sha512-YEROVT+m/JAXmBwL3fzIye8dUMlrzoXqetwybUrZJnT19jL17RYJh+JVi8oONLfGuq0HqqsnOBehMqasBJQ+Rw==}
+    dependencies:
+      '@qiwi/substrate': 2.0.3
+      tslib: 2.5.0
     dev: true
 
   /@babel/code-frame/7.18.6:
@@ -2062,6 +2071,32 @@ packages:
       '@pnpm/config.env-replace': 1.0.0
       '@pnpm/network.ca-file': 1.0.2
       config-chain: 1.1.13
+    dev: true
+
+  /@qiwi/substrate-abstract/2.0.3:
+    resolution: {integrity: sha512-MGhuGCLfoJYY6SFrmTdvVcvX8n+Gn5e9Xlsdnmza8PhpoohOeOV6CxtJOeItoWwC35sSMmJOLUh2dvxTdHD/iQ==}
+    dependencies:
+      '@qiwi/substrate-types': 2.0.3
+    dev: true
+
+  /@qiwi/substrate-std/2.0.3:
+    resolution: {integrity: sha512-gGU1laT/qbEoY1bTKZvV2iIWfN2bbWGmyuXzDo87Xjz2+0jvCLpKy3hr0IElC7VtJhcPI1jkgE3BkIk21qR9IQ==}
+    dependencies:
+      '@qiwi/substrate-types': 2.0.3
+      tslib: 2.5.0
+    dev: true
+
+  /@qiwi/substrate-types/2.0.3:
+    resolution: {integrity: sha512-72THnWXH/ce2pHUKQiQp+jOHVBrAzGaWwOQ/4fYVhXAP5bCxyOCj8SCL0gB/SZ8vtCuCzOs8GHAb1UR9/FLH/g==}
+    dev: true
+
+  /@qiwi/substrate/2.0.3:
+    resolution: {integrity: sha512-agjwPuyotfP83AQGP9nmIQwwhTSfwfLH0dcFmafIbcWcWPAP7SNN38W9LDAW5li64Hlo+T4jNSAjPtHKq6nrxg==}
+    dependencies:
+      '@qiwi/substrate-abstract': 2.0.3
+      '@qiwi/substrate-std': 2.0.3
+      '@qiwi/substrate-types': 2.0.3
+      tslib: 2.5.0
     dev: true
 
   /@rollup/plugin-babel/5.3.1_56fnebo2rl23pzm3cph57q7t7i:
@@ -6270,6 +6305,16 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: true
 
+  /semantic-release-monorepo-hooks/2.10.0:
+    resolution: {integrity: sha512-0hLMv/qKOmofRn2S1UCEnW8aUl3s4OLQUcMheathHHPLaOgLCMJ4kNDXH6RXDK1ZSFfM1rgMAbertzXkdVOiBQ==}
+    dependencies:
+      '@antongolub/git-root': 1.5.10
+      cosmiconfig: 7.1.0
+      lodash: 4.17.21
+      read-pkg: 5.2.0
+      semver: 7.3.8
+    dev: true
+
   /semantic-release-monorepo/7.0.5_semantic-release@19.0.5:
     resolution: {integrity: sha512-riOYD8eZ5PIST7o97Ltc01l8VQW7q01NmPDRPOBycaeZczJowyKkzkBfo92kTIWDFWbdO3G8A695JrrYjoTaiw==}
     peerDependencies:
@@ -6848,6 +6893,10 @@ packages:
 
   /tslib/2.4.0:
     resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
+    dev: true
+
+  /tslib/2.5.0:
+    resolution: {integrity: sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==}
     dev: true
 
   /tsutils/3.21.0_typescript@4.7.4:
