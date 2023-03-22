@@ -19,7 +19,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: 'pnpm'
       - uses: pnpm/action-setup@v2
         name: Install pnpm
         id: pnpm-install
@@ -43,8 +42,12 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
-      - run: pnpm run build
-      - run: npx semantic-release
+
+      - name: Build
+        run: pnpm run build
+
+      - name: Release
+        run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
