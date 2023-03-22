@@ -51,7 +51,7 @@ jobs:
       - name: Release
         run: |
 
-          pnpm -F "@riskers12/**" --workspace-concurrency=1 exec -- npx multi-semantic-release
+          pnpm -F "@riskers12/**" --workspace-concurrency=1 exec -- npx multi-semantic-release --debug
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
