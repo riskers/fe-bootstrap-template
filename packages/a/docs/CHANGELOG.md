@@ -1,3 +1,16 @@
+# @riskers12/a-v1.0.0 (2023-03-22)
+
+
+### Features
+
+* Both a and b ([9f1c0c4](https://github.com/riskers/fe-bootstrap-template/commit/9f1c0c4fc1494eb5832ed4096a8a7bdb8a4f4f24))
+* Both a and b ([14ff9d3](https://github.com/riskers/fe-bootstrap-template/commit/14ff9d37123bb85f3c7a6fc6bf329fb330aeb893))
+* Both a and b ([2a01ff6](https://github.com/riskers/fe-bootstrap-template/commit/2a01ff61c3a5e583574bd0214d347148b1995d4d))
+* Both a and b ([7caa16c](https://github.com/riskers/fe-bootstrap-template/commit/7caa16c8010117b27e14a9540473c02897dec138))
+* Monorepo ([82348ba](https://github.com/riskers/fe-bootstrap-template/commit/82348ba67e7ef2e97637cf3fe902cc5db6722f1c))
+* Mul method ([4e698b6](https://github.com/riskers/fe-bootstrap-template/commit/4e698b676da43b9eaf3e7f59e9065a732affeda1))
+* New Feat ([ae9905f](https://github.com/riskers/fe-bootstrap-template/commit/ae9905f7ceb193010d084e79a965597b4c0e881c))
+
 # [@riskers12/a-v1.0.0-alpha.7](https://github.com/riskers/fe-bootstrap-template/compare/@riskers12/a-v1.0.0-alpha.6...@riskers12/a-v1.0.0-alpha.7) (2023-03-22)
 
 
