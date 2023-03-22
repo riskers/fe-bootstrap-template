@@ -26,8 +26,7 @@
     "lint-staged": "^13.0.3",
     "prettier": "^2.8.6",
     "semantic-release": "^19.0.3",
-    "semantic-release-monorepo": "^7.0.5",
-    "zx-bulk-release": "^1.26.2"
+    "semantic-release-monorepo": "^7.0.5"
   },
   "main": ".commitlintrc.js",
   "directories": {
