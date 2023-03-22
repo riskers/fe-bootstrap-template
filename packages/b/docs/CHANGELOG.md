@@ -1,3 +1,13 @@
+# @riskers12/b-v1.0.0-alpha.1 (2023-03-22)
+
+
+### Features
+
+* Monorepo ([82348ba](https://github.com/riskers/fe-bootstrap-template/commit/82348ba67e7ef2e97637cf3fe902cc5db6722f1c))
+* New Feat ([ae9905f](https://github.com/riskers/fe-bootstrap-template/commit/ae9905f7ceb193010d084e79a965597b4c0e881c))
+* Update ([109db90](https://github.com/riskers/fe-bootstrap-template/commit/109db9008297c4be68be443d409dde0ea514d802))
+* Update ([65fe4b4](https://github.com/riskers/fe-bootstrap-template/commit/65fe4b4b9328686bdd244919d88a69435d6db72f))
+
 # @riskers12/b [1.0.0-alpha.3](https://github.com/riskers/fe-bootstrap-template/compare/@riskers12/b@1.0.0-alpha.2...@riskers12/b@1.0.0-alpha.3) (2023-03-22)
 
 
