@@ -54,7 +54,7 @@ jobs:
         uses: changesets/action@v1
         with:
           publish: pnpm changeset publish
-          version: pnpm changeset version
+          version: pnpm changeset pre enter alpha && pnpm changeset version && pnpm changeset pre exit
           commit: 'chore: [ci] release'
           title: 'chore: [ci] release'
         env:
