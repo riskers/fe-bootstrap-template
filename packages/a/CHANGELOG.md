@@ -1,5 +1,11 @@
 # @riskers12/a
 
+## 2.2.0-alpha.2
+
+### Minor Changes
+
+- e1a439c: this is a
+
 ## 2.2.0-alpha.1
 
 ### Minor Changes
