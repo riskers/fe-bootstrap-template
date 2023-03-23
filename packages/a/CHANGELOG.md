@@ -1,5 +1,17 @@
 # @riskers12/a
 
+## 3.0.0
+
+### Major Changes
+
+- 28557ec: a
+- 26776d0: d:q
+
+### Minor Changes
+
+- 806aab0: sthis is aaaa
+- 26776d0: aaa
+
 ## 2.2.0-alpha.3
 
 ### Minor Changes
