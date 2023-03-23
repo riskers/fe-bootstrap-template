@@ -1,5 +1,11 @@
 # @riskers12/a
 
+## 2.2.0-alpha.3
+
+### Minor Changes
+
+- 842b5d4: new a
+
 ## 2.2.0-alpha.2
 
 ### Minor Changes
