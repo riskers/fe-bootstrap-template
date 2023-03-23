@@ -1,4 +1,4 @@
-name: Release
+name: PreRelease
 on:
   push:
     branches:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   release:
-    name: release
+    name: prerelease
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -50,9 +50,6 @@ jobs:
           EOF
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      - name: Remove pre.json
-        run: npx rimraf .changeset/pre.json
 
       - name: Create Release Pull Request or Publish to npm
         uses: changesets/action@v1
