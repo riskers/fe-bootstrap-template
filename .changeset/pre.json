@@ -1,0 +1,12 @@
+{
+  "mode": "pre",
+  "tag": "alpha",
+  "initialVersions": {
+    "@riskers12/a": "2.0.0-alpha.0",
+    "@riskers12/b": "2.0.0-alpha.1"
+  },
+  "changesets": [
+    "empty-guests-hide",
+    "new-moons-vanish"
+  ]
+}

@@ -1,7 +1,7 @@
 name: Release
 on:
   repository_dispatch:
-    types: [ semantic-release ]
+    types: [semantic-release]
   push:
     branches:
       - main
@@ -51,7 +51,6 @@ jobs:
       - name: Release
         run: |
           pnpm -F "@riskers12/**" --workspace-concurrency=1 exec -- npx --no-install semantic-release -e semantic-release-monorepo
-          pnpm -r publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

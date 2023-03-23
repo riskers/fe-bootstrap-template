@@ -1,6 +1,6 @@
 {
   "name": "@riskers12/b",
-  "version": "1.0.0-alpha.9",
+  "version": "2.0.0-alpha.1",
   "description": "",
   "main": "dist/esm/index.js",
   "scripts": {
