@@ -6,7 +6,6 @@
     "@riskers12/b": "2.0.2-alpha.4"
   },
   "changesets": [
-    "gorgeous-nails-try",
-    "shy-ligers-impress"
+    "gorgeous-nails-try"
   ]
 }
