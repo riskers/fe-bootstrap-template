@@ -1,5 +1,12 @@
 # @riskers12/b
 
+## 2.0.2-alpha.3
+
+### Patch Changes
+
+- Updated dependencies [842b5d4]
+  - @riskers12/a@2.2.0-alpha.3
+
 ## 2.0.2-alpha.2
 
 ### Patch Changes
