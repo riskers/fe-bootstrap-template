@@ -2,13 +2,8 @@
   "mode": "pre",
   "tag": "alpha",
   "initialVersions": {
-    "@riskers12/a": "2.1.0",
-    "@riskers12/b": "2.0.1"
+    "@riskers12/a": "2.2.0-alpha.3",
+    "@riskers12/b": "2.0.2-alpha.3"
   },
-  "changesets": [
-    "fifty-lions-burn",
-    "gentle-planes-drop",
-    "honest-ways-explain",
-    "violet-roses-move"
-  ]
+  "changesets": []
 }
