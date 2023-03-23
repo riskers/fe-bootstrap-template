@@ -1,5 +1,19 @@
 # @riskers12/b
 
+## 2.0.1
+
+### Patch Changes
+
+- Updated dependencies
+  - @riskers12/a@2.1.0
+
+## 2.0.1-alpha.0
+
+### Patch Changes
+
+- Updated dependencies
+  - @riskers12/a@2.1.0-alpha.0
+
 ## 2.0.0
 
 ### Major Changes

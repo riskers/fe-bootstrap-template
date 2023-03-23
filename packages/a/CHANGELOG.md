@@ -1,5 +1,17 @@
 # @riskers12/a
 
+## 2.1.0
+
+### Minor Changes
+
+- this is a feat
+
+## 2.1.0-alpha.0
+
+### Minor Changes
+
+- this is a feat
+
 ## 2.0.0
 
 ### Major Changes
