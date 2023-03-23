@@ -53,13 +53,30 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Create Release Pull Request
+        uses: changesets/action@v1
+        with:
+          version: pnpm changeset version
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish to npm
         id: changesets
         uses: changesets/action@v1
         with:
-          publish: pnpm publish -r
+          publish: pnpm changeset publish
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+
+      # - name: Create Release Pull Request
+      #   id: changesets
+      #   uses: changesets/action@v1
+      #   with:
+      #     publish: pnpm publish -r
+      #   env:
+      #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # PNPM blog
       # - name: create and publish versions
