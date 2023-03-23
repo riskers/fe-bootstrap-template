@@ -6,6 +6,7 @@
     "@riskers12/b": "2.0.1"
   },
   "changesets": [
-    "fifty-lions-burn"
+    "fifty-lions-burn",
+    "gentle-planes-drop"
   ]
 }

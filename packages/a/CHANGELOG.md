@@ -1,5 +1,11 @@
 # @riskers12/a
 
+## 2.2.0-alpha.0
+
+### Minor Changes
+
+- this is test b
+
 ## 2.1.0
 
 ### Minor Changes
