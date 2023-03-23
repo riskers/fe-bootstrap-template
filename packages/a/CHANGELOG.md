@@ -1,5 +1,11 @@
 # @riskers12/a
 
+## 2.2.0
+
+### Minor Changes
+
+- 3bbab72: this is a
+
 ## 2.2.0-alpha.3
 
 ### Minor Changes
