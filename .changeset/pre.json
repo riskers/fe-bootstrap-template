@@ -6,6 +6,7 @@
     "@riskers12/b": "2.0.1"
   },
   "changesets": [
+    "fifty-drinks-poke",
     "fifty-lions-burn",
     "gentle-planes-drop",
     "honest-ways-explain",
