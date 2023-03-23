@@ -64,8 +64,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Exit pre
-        run: pnpm changeset pre exit
+      # - name: Exit pre
+      #   run: pnpm changeset pre exit
 
       # - name: Create Release Pull Request
       #   uses: changesets/action@v1
