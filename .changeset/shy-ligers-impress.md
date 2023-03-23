@@ -2,4 +2,4 @@
 '@riskers12/a': minor
 ---
 
-aaa
+this is a
