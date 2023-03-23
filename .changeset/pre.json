@@ -1,9 +1,9 @@
 {
-  "mode": "exit",
+  "mode": "pre",
   "tag": "alpha",
   "initialVersions": {
-    "@riskers12/a": "2.2.0-alpha.2",
-    "@riskers12/b": "2.0.2-alpha.2"
+    "@riskers12/a": "2.2.0-alpha.3",
+    "@riskers12/b": "2.0.2-alpha.3"
   },
   "changesets": [
     "two-shirts-try",
