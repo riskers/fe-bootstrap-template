@@ -23,8 +23,8 @@ jobs:
           persist-credentials: false
       - uses: ./.github/actions/ci-setup
 
-      # - name: Build
-      #   run: pnpm run -r build
+      - name: Build
+        run: pnpm run -r build
 
       - name: Creating .npmrc
         run: |
@@ -41,7 +41,7 @@ jobs:
         uses: changesets/action@v1
         with:
           version: pnpm changeset version --snapshot alpha
-          publish: pnpm run -r build && pnpm changeset publish --tag alpha --no-git-tag
+          publish: pnpm changeset publish --tag alpha --no-git-tag
           # commit: 'chore: [ci] release'
           # title: 'chore: [ci] release'
         env:
