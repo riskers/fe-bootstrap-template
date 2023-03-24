@@ -1,6 +1,6 @@
 {
   "name": "@riskers12/a",
-  "version": "0.0.1",
+  "version": "0.0.0-alpha-20230324141404",
   "description": "",
   "main": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
