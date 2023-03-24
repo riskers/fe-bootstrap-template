@@ -42,8 +42,8 @@ jobs:
         with:
           version: pnpm changeset version --snapshot alpha
           publish: pnpm changeset publish --tag alpha --no-git-tag
-          # commit: 'chore: [ci] release'
-          # title: 'chore: [ci] release'
+          commit: 'chore: [ci] release'
+          title: 'chore: [ci] release'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
