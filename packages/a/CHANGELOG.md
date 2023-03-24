@@ -1,5 +1,11 @@
 # @riskers12/a
 
+## 0.0.0-alpha-20230324135300
+
+### Minor Changes
+
+- [#39](https://github.com/riskers/fe-bootstrap-template/pull/39) [`e44723a`](https://github.com/riskers/fe-bootstrap-template/commit/e44723a6ff58687c7f21766be9304b0ecfae5e59) Thanks [@riskers](https://github.com/riskers)! - feat1
+
 ## 0.0.0-alpha-20230324025126
 
 ### Minor Changes
