@@ -4,43 +4,27 @@ on:
     branches:
       - alpha
 
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+permissions: {}
+
 jobs:
   release:
+    permissions:
+      contents: write # to create release
+      issues: write # to post issue comments
+      pull-requests: write # to create pull request
+
     name: prerelease
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
         with:
           persist-credentials: false
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - uses: pnpm/action-setup@v2
-        name: Install pnpm
-        id: pnpm-install
-        with:
-          version: 7
-          run_install: false
+      - uses: ./.github/actions/ci-setup
 
-      - name: Get pnpm store directory
-        id: pnpm-cache
-        shell: bash
-        run: |
-          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
-
-      - uses: actions/cache@v3
-        name: Setup pnpm cache
-        with:
-          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
-
-      - name: Install dependencies
-        run: pnpm install
-
-      - name: Build
-        run: pnpm run -r build
+      # - name: Build
+      #   run: pnpm run -r build
 
       - name: Creating .npmrc
         run: |
@@ -57,9 +41,9 @@ jobs:
         uses: changesets/action@v1
         with:
           version: pnpm changeset version --snapshot alpha
-          publish: pnpm changeset publish --tag alpha
-          commit: 'chore: [ci] release'
-          title: 'chore: [ci] release'
+          publish: pnpm run -r build && pnpm changeset publish --tag alpha --no-git-tag
+          # commit: 'chore: [ci] release'
+          # title: 'chore: [ci] release'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
