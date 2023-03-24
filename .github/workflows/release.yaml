@@ -6,6 +6,8 @@ on:
 
 jobs:
   release:
+    # prevents this action from running on forks
+    if: github.repository == 'riskers/fe-bootstrap-template'
     name: release
     permissions:
       contents: write  #  to create release (changesets/action)
