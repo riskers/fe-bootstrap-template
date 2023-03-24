@@ -1,5 +1,13 @@
 # @riskers12/a
 
+## 0.1.0-alpha.1
+
+### Minor Changes
+
+- [#53](https://github.com/riskers/fe-bootstrap-template/pull/53) [`fc2e40d`](https://github.com/riskers/fe-bootstrap-template/commit/fc2e40d7869edc0eeb3eb3009b6732e8a60725ce) Thanks [@riskers](https://github.com/riskers)! - feat4
+
+- [#51](https://github.com/riskers/fe-bootstrap-template/pull/51) [`2192b3a`](https://github.com/riskers/fe-bootstrap-template/commit/2192b3af6620dc3480be92ef78f56f3105131062) Thanks [@riskers](https://github.com/riskers)! - feat3
+
 ## 0.1.0-alpha.0
 
 ### Minor Changes
