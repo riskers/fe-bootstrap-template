@@ -5,5 +5,8 @@
     "@riskers12/a": "0.0.1",
     "@riskers12/b": "0.0.1"
   },
-  "changesets": []
+  "changesets": [
+    "fresh-roses-hunt",
+    "moody-glasses-leave"
+  ]
 }
