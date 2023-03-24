@@ -8,6 +8,7 @@
     "url": "git@github-riskers.com:riskers/fe-bootstrap-template.git"
   },
   "scripts": {
+    "version": "pnpm install && changeset version",
     "prepare": "husky install"
   },
   "keywords": [],
