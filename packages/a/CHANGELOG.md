@@ -1,5 +1,12 @@
 # @riskers12/a
 
+## 0.0.0-alpha-20230324023826
+
+### Minor Changes
+
+- 3684ab5: yeah!
+- f7d53d6: yeah
+
 ## 2.2.0-alpha.5
 
 ### Minor Changes
