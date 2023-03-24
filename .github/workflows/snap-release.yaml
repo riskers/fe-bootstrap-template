@@ -24,6 +24,8 @@ jobs:
       - uses: ./.github/actions/ci-setup
 
       - name: Build
+        # you can use filter command also
+        # run: pnpm -F "@riskers12/**" --workspace-concurrency=1 exec -- npx --no-install semantic-release -e semantic-release-monorepo
         run: pnpm run -r build
 
       - name: Creating .npmrc
@@ -37,16 +39,36 @@ jobs:
       # - name: Enter pre Mode
       #   run: pnpm changeset pre enter alpha
 
-      - name: Create Release Pull Request or Publish to npm
-        uses: changesets/action@v1
-        with:
-          version: pnpm changeset version --snapshot alpha
-          publish: pnpm changeset publish --tag alpha --no-git-tag
-          commit: 'chore: [ci] release'
-          title: 'chore: [ci] release'
+      - name: Bump Package Versions
+        id: changesets
+        run: |
+          pnpm exec changeset version --snapshot alpha > changesets.output.txt 2>&1
+          echo ::set-output name=result::`cat changesets.output.txt`
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish Release
+        id: publish
+        run: |
+          pnpm changeset publish --tag alpha > publish.output.txt 2>&1
+          echo ::set-output name=result::`cat publish.output.txt`
+        env:
+          # Needs access to publish to npm
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+
+
+      # - name: Create Release Pull Request or Publish to npm
+      #   uses: changesets/action@v1
+      #   with:
+      #     version: pnpm changeset version --snapshot alpha
+      #     publish: pnpm changeset publish --tag alpha --no-git-tag
+      #     commit: 'chore: [ci] release'
+      #     title: 'chore: [ci] release'
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       # - name: Exit pre
       #   run: pnpm changeset pre exit
