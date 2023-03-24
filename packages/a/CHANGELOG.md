@@ -1,5 +1,11 @@
 # @riskers12/a
 
+## 0.0.0-alpha-20230324140429
+
+### Minor Changes
+
+- e44723a: feat1
+
 ## 0.0.0-alpha-20230324025126
 
 ### Minor Changes
