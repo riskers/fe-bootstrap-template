@@ -1,28 +1,20 @@
 # opensource-fe-template
 
-* Monorepo: https://riskers.notion.site/pnpm-monorepo-publish-d2db019bb2ba438baa0c7e2f20711315
-* Not Monorepo: https://riskers.notion.site/77b61318069c4f01a593e23dde13bf61
+**FOR MONOREPO**
 
 ## PNPM workspace
 
 use PNPM workspace monorepo
 
-## RELEASE
-
-use semantic-release
-
-## Lint and Format
-
-* [ESLint](https://eslint.org/): [config](./.eslintrc.js)
-* [Prettier](https://prettier.io/): [config](./.prettierrc.js)
-
-## Limit package management
-
 Limit the types of package management Strictly (default [PNPM](https://pnpm.io/)).
 
 If you want to modify, you can change the `engines` field in [package.json](./package.json).
 
-## Husky
+## RELEASE
+
+use [changesets](https://github.com/changesets/changesets)
+
+## Husky + LintStaged
 
 If [husky](https://github.com/typicode/husky) not works:
 
@@ -31,7 +23,14 @@ chmod ug+x .husky/*
 chmod ug+x .git/hooks/*
 ```
 
+## Lint and Format
+
+* [ESLint](https://eslint.org/): [config](./.eslintrc.js)
+* [Prettier](https://prettier.io/): [config](./.prettierrc.js)
+
 > reference [stackoverflow](https://stackoverflow.com/questions/8598639/why-is-my-git-pre-commit-hook-not-executable-by-default)
+
+lint command: `pnpm run -r lint`
 
 ## Commitlint
 
@@ -48,11 +47,3 @@ chmod ug+x .git/hooks/*
   ![](https://user-images.githubusercontent.com/106944652/184101863-aeac91d9-f0d4-4dc5-a4ca-969372263231.png)
 
 3. Auto publish package by [semantic-release](https://github.com/semantic-release/semantic-release) on [Github Action](./.github/workflows/release.yaml).
-
-## Support Alpha / Beta pre-release
-
-[There](https://www.npmjs.com/package/opensource-fe-template?activeTab=versions) are version history:
-![](https://i.imgur.com/mp37kEx.png)
-
-More details: https://github.com/semantic-release/semantic-release/blob/master/docs/recipes/release-workflow/pre-releases.md
-

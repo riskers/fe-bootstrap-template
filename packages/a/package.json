@@ -5,17 +5,12 @@
   "main": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
   "scripts": {
-    "semantic-release": "semantic-release",
     "lint": "prettier --write './src/*.{ts,tsx,js,jsx}' && eslint ./src/ --ext .js,.jsx,.ts,.tsx --fix",
     "predev": "rimraf ./dist",
     "dev": "rollup -cw",
     "prebuild": "rimraf ./dist",
     "build": "rollup -c",
     "test": "TS_NODE_PROJECT=./config/tsconfig-test.json node --es-module-specifier-resolution=node --loader ts-node/esm --nolazy node_modules/mocha/lib/cli/cli.js --timeout 9999999 --color 'test/*.test.ts'"
-  },
-  "engines": {
-    "yarn": "please use pnpm",
-    "npm": "please use pnpm"
   },
   "exports": {
     ".": {
