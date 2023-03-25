@@ -5,5 +5,7 @@
     "@riskers12/a": "0.3.0",
     "@riskers12/b": "0.3.0"
   },
-  "changesets": []
+  "changesets": [
+    "tricky-scissors-learn"
+  ]
 }

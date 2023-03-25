@@ -1,5 +1,12 @@
 # @riskers12/b
 
+## 0.3.1-alpha.0
+
+### Patch Changes
+
+- Updated dependencies [[`35f213f`](https://github.com/riskers/fe-bootstrap-template/commit/35f213f20d0c4976f562877f1e643c4e40823f2e)]:
+  - @riskers12/a@0.4.0-alpha.0
+
 ## 0.0.2
 
 ### Patch Changes
