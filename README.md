@@ -1,6 +1,6 @@
 # opensource-fe-template
 
-**FOR MONOREPO**
+**FOR PNPM MONOREPO**
 
 ## PNPM workspace
 
@@ -10,7 +10,7 @@ Limit the types of package management Strictly (default [PNPM](https://pnpm.io/)
 
 If you want to modify, you can change the `engines` field in [package.json](./package.json).
 
-## RELEASE
+## RELEASE / CHANGELOG
 
 use [changesets](https://github.com/changesets/changesets)
 
@@ -46,4 +46,4 @@ lint command: `pnpm run -r lint`
 
   ![](https://user-images.githubusercontent.com/106944652/184101863-aeac91d9-f0d4-4dc5-a4ca-969372263231.png)
 
-3. Auto publish package by [semantic-release](https://github.com/semantic-release/semantic-release) on [Github Action](./.github/workflows/release.yaml).
+3. Auto publish package by Changesets on [Github Action](./.github/workflows/release.yaml).
