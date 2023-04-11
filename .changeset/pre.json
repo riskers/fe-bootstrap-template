@@ -6,6 +6,7 @@
     "@riskers12/b": "0.3.1"
   },
   "changesets": [
-    "seven-owls-carry"
+    "seven-owls-carry",
+    "tidy-mirrors-ring"
   ]
 }
