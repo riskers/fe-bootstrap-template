@@ -1,5 +1,11 @@
 # @riskers12/a
 
+## 0.5.0
+
+### Minor Changes
+
+- [#64](https://github.com/riskers/fe-bootstrap-template/pull/64) [`1d9b1a8`](https://github.com/riskers/fe-bootstrap-template/commit/1d9b1a88a3d29627c9558a202028e947632f689d) Thanks [@riskers](https://github.com/riskers)! - new function
+
 ## 0.5.0-alpha.0
 
 ### Minor Changes

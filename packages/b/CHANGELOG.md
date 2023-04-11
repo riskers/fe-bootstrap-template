@@ -1,5 +1,16 @@
 # @riskers12/b
 
+## 0.4.0
+
+### Minor Changes
+
+- [#59](https://github.com/riskers/fe-bootstrap-template/pull/59) [`6b89245`](https://github.com/riskers/fe-bootstrap-template/commit/6b892456b31b34203ab59a9672dc4486300986cd) Thanks [@riskers](https://github.com/riskers)! - foo
+
+### Patch Changes
+
+- Updated dependencies [[`1d9b1a8`](https://github.com/riskers/fe-bootstrap-template/commit/1d9b1a88a3d29627c9558a202028e947632f689d)]:
+  - @riskers12/a@0.5.0
+
 ## 0.4.0-alpha.1
 
 ### Patch Changes
