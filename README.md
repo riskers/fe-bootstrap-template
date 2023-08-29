@@ -1,6 +1,6 @@
-# opensource-fe-template
+# mono-bootstrap-template
 
-**FOR PNPM MONOREPO**
+[NPM VERSION](https://www.npmjs.com/settings/riskers12/packages)
 
 ## PNPM workspace
 
