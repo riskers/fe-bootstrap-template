@@ -1,7 +1,8 @@
 {
-  "name": "@riskers12/b",
-  "version": "0.4.0",
+  "name": "@riskers12/c",
+  "version": "0.1.0",
   "description": "",
+  "private": true,
   "main": "dist/esm/index.js",
   "scripts": {
     "lint": "prettier --write './src/*.{ts,tsx,js,jsx}' && eslint ./src/ --ext .js,.jsx,.ts,.tsx --fix",
@@ -18,10 +19,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@riskers12/a": "workspace:*",
-    "@riskers12/c": "workspace:*"
-  },
   "devDependencies": {
     "@babel/core": "^7.18.10",
     "@babel/preset-env": "^7.20.2",
